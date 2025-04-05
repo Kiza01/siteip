@@ -1,0 +1,149 @@
+body {
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr;
+    align-items: center;
+    width: 99vw;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0.5%;
+    border-radius: 0px 0px 20px 20px;
+
+    @media(max-width: 700px) {
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 20vw;
+        row-gap: 25px;
+
+        .input {
+            margin-left: 0;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .search {
+            width: 200px;
+        }
+
+        .logo img {
+            width: 23px;
+            height: 20.5px;
+        }
+    }
+
+    @media(max-width: 550px) {
+
+        .title {
+            font-size: 18px;
+        }
+
+        .search {
+            width: 150px;
+        }
+
+        .logo img {
+            width: 20px;
+            height: 17.5px;
+            margin-left: 5px;
+        }
+    }
+    @media(max-width: 450px) {
+        grid-template-columns: 1fr 3fr;
+        .search {
+            width: 200px;
+        }
+    }
+    @media(max-width: 370px) {
+        row-gap: 10px;
+        .search {
+            width: 150px;
+        }
+    }
+}
+
+/* Название */
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 15px;
+    color: #005AFF;
+    cursor: default;
+}
+
+/* Поисковая строка */
+
+.search {
+    outline: none;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+}
+
+.input {
+    background-color: #005AFF;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 20px 2px 2px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.input img {
+    width: 25px;
+    height: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+
+/* Логотипы */
+
+.logo img {
+    width: 25px;
+    height: 22.5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-flex;
+
+}
+
+.logo img:hover {
+    opacity: 50%;
+}
+
+@media(max-width: 800px) {
+    .search {
+        width: 300px;
+    }
+}
+
+
+
+@media(min-width: 1700px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .search {
+        width: 500px;
+        height: 50px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 27px;
+        margin-left: 50px;
+    }
+}
