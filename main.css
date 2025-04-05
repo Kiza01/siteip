@@ -91,7 +91,7 @@
         grid-template-columns: repeat(6, 125px);
     }
     .products{
-        height: 400px;
+        height: 600px;
     }
     .cards_tovar{
         height: 204px;
